@@ -1,0 +1,38 @@
+.cuadro{
+    background-color: #0878A0;
+    border-radius: 1rem;
+}
+
+.btn-info{
+    border: none;
+    background-color: #2E338C;
+    color: #ffffff;
+}
+
+@media screen and (min-width:1024px){
+    .btn-info:hover{
+        color: #ffffff;
+        background-color: #0878A0;
+        transition: 2s;
+        border: none;
+    }
+}
+
+.btn-encuesta{
+    background-color: #40A0C0;
+    border-color: #40A0C0;
+    color: white;
+}
+
+.back-title{
+    background-color: #2E338C;
+}
+
+button{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}

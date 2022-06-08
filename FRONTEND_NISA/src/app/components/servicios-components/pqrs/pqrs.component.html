@@ -1,0 +1,105 @@
+<div class="container mb-5 mt-2 down-footer">
+    <div class="row">
+        <div class="col-12 cuadro">
+            <h1 class="titulo text-uppercase mt-5 mr-2 ml-4 text-white text-center">Preguntas, quejas, reclamos o sugerencias</h1>
+            <h3 class="mt-5 text-white mr-2 ml-4 mb-5 text-center">El diligenciamiento del presente formulario es la presentación 
+                de una petición o la manifestación de una inconformidad, insatisfacción particular o general o las debidas
+                sugerencias para la mejoría de la IPS.
+            </h3>
+
+            <h3 class="mt-5 text-white mr-2 ml-4 mb-5 text-center">Por favor déjenos saber su inquietud, estaremos muy atentos a contestarle
+                lo más pronto posible. No olvide hacer clic en el siguiente botón para que el formulario sea efectivo en su
+                petición.
+            </h3>
+        </div>
+
+         <!-- Modal donde el usuario podrá enviar la PQRS a la empresa -->
+
+         <div class="col-12 text-center">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalC"><h2 class="text-uppercase text-white h2 titulo">
+                Diligenciar
+            </h2></button>
+        </div>
+        </div>
+        <div class="modal fade" id="exampleModalC" tabindex="-1" aria-labelledby="exampleModalCLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header back-title info">
+                <h5 class="modal-title titulo text-uppercase" id="exampleModalCLabel">Envíe su PQRS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="../../../../assets/img/icons/cerrar-sesion.png" alt="Cerrar" class="cerrar-ventana"></button>
+            </div>
+        <div class="modal-body">
+        <div class="container" >
+            <form class="row g-3" [formGroup]="form">
+                <div class="col-md-6 form-group info">
+                    <label class="form-label" >Tipo Persona</label>
+                    <select formControlName="tipo_persona" aria-label="Default select example" class="form-control form-select border-info">
+                        <option>Natural</option>
+                        <option>Jurídica</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 form-group info">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" formControlName="nombre" class="form-control border-info">
+                </div>
+
+                <div class="col-md-6 form-group info">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" formControlName="email" class="form-control border-info">
+
+                    <span 
+                    class="text-danger" *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">El e-mail <strong>es inválido</strong>
+                    </span>
+                </div>
+
+                <div class="col-md-6 form-group info">
+                    <label class="form-label">Tipo Documento</label>
+                    <select aria-label="Default select example" formControlName="tipo_documento" class="form-control form-select form-label border-info">
+                            <option>Cédula de Ciudadanía</option>
+                            <option>Tarjeta de Identidad</option>   
+                            <option>Registro Civil</option>            
+                            <option>Documento de extranjería</option>            
+         
+                    </select>
+                </div>
+
+                <div class="col-md-6 form-group info">
+                    <label class="form-label">Número Documento</label>
+                    <input type="number" formControlName="numero_documento" class="form-control border-info">
+            
+                </div>
+                <div class="col-md-6 form-group info">
+                    <label class="form-label">Celular</label>
+                    <input type="number" formControlName="celular" class="form-control border-info">
+                </div>
+
+
+                <div class="col-md-12 form-group info">
+                    <label class="form-label ">Dirección</label>
+                    <input type="text" formControlName="direccion" class="form-control border-info">
+                </div>
+
+
+
+                <div class="col-md-12 col-mt-5 form-group info">
+                    <label class="form-label mt-2">PQRS</label>
+                    <textarea formControlName="pqrs" rows="10" class="form-label form-control border-info" placeholder="Digite su petición en esta sección, específiquese lo mejor posible, por favor."></textarea>
+                </div>
+
+                <div class="form-check text-center">
+                    <input class="form-check-input" formControlName="tratamiento_datos" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label subtitulo" for="flexCheckDefault">Declaro que he leído y acepto <a target="_blank" href="../../../../../assets/img/TRATAMIENTO_DATOS/POLÍTICA DE MANEJO, ADMINISTRACIÓN Y TRATAMIENTO DE DATOS NEUROIMÁGENES S.A.pdf">la Política de Tratamiento de Datos Personales</a> que ofrece NEUROIMÁGENES S.A. </label>
+                </div>
+
+                <div class="modal-footer button-position form-group">
+                    <button type="button" (click)="limpiarFormulario()" class="btn btn-secondary subtitulo text-uppercase" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" (click)="submit()" class="btn btn-pqrs subtitulo text-uppercase" [disabled]="form.invalid" data-dismiss="modal">Enviar PQRS</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>

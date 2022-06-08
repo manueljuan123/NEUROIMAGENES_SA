@@ -1,0 +1,44 @@
+.img-logo{
+    width: 100px;
+}
+
+.nav-link{
+    color: #1a1a1a;
+}
+
+.nav-link:hover {
+    color: #2E338C;
+    transition: 0.4s;
+}
+
+.logo:after{
+    content:"";
+    position:absolute;
+    background: #B7D93D;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.9s;
+}
+
+.logo:hover{
+    color:white;
+}
+
+.logo:hover:after{
+    width: 100%;
+}
+
+.second_footer{
+    margin-bottom: -25px;
+    position:absolute;
+    width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 375px){
+    .social-title{
+        text-align: center;
+    }
+}

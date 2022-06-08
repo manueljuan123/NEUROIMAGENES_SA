@@ -1,0 +1,240 @@
+ul{
+    list-style: none;
+}
+.img-logo{
+    width: 100px;
+}
+
+.navbar{
+    background-color:white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .05);
+    min-height: 100px;
+
+}
+
+.nav-link{
+    color: #1a1a1a;
+
+}
+
+.nav-link:hover {
+    color: #2E338C;
+    transition: 0.4s;
+    
+}
+
+.logo:after{
+    content:"";
+    position:absolute;
+    background: #B7D93D;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -4px;
+    transition: 0.9s;
+}
+
+@media screen and (max-width: 375px){
+    .logo:after{
+        display: none;
+    }
+}
+
+.logo:hover{
+    color:white;
+}
+
+.logo:hover:after{
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-menu{  
+    display: block;
+    border-radius: 8px
+
+
+}
+
+@media screen and (min-width: 992px){
+    .dropdown .dropdown-menu{
+        display: block; 
+        opacity:0;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
+        visibility: hidden;
+     }
+     .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        width: 2rem;
+        
+     }
+
+     .sub-menu-consultas{
+        width: 12rem;
+        height: 15rem;
+        display: block;
+        position: absolute;
+        border-top: 3px solid #B7D93D;
+        background-color: #ffffff;
+        z-index: 50;
+        right: 10rem;
+        top: 16rem;
+        visibility: hidden;
+        transition: all 650ms ease;
+        opacity: 0;
+    }
+    
+    .sub-menu-consultas .sub-menu-consultas{
+        border-top: none;
+        border-left: 3px solid #2E338C;
+        top: 0;
+        left: 160%;
+    }
+    
+    .navbar-nav li:hover > .sub-menu-consultas{
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+        
+    }
+    
+    .sub-menu-consultas li:hover > .sub-menu-consultas{
+        top: 0;
+        left: 100%;
+        opacity: 1;
+    }
+    
+    .sub-menu-consultas li{
+        line-height: 2rem;
+        
+    }
+
+    .sub-menu-servicios{
+        width: 15rem;
+        height: 20rem;
+        display: block;
+        position: absolute;
+        border-top: 3px solid #B7D93D;
+        background-color: #ffffff;
+        z-index: 50;
+        right: 10rem;
+        top: 16rem;
+        transition: all 650ms ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .sub-menu-servicios .sub-menu-servicios{
+        border-top: none;
+        border-left: 3px solid #2E338C;
+        top: 0;
+        left: 160%;
+    }
+    
+    .navbar-nav li:hover > .sub-menu-servicios{
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .sub-menu-servicios li:hover > .sub-menu-servicios{
+        top: 0;
+        left: 100%;
+        opacity: 1;
+    }
+    
+    .sub-menu-servicios li{
+        line-height: 2rem;
+    }
+
+    .nav-link{
+        text-align: end;
+    }
+
+    .dropdown.menu{
+        position: absolute;
+        
+    }
+}
+
+.container {
+  scroll-behavior: smooth;    /* <----- THE SECRET ---- */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){ 
+
+    .dropdown:hover .dropdown-menu{  
+        display:block;
+    }
+
+    .sub-menu-consultas{
+        display: none;
+    }
+
+    .sub-menu-servicios{
+        display: none;
+    }
+
+    .nav-link{
+        text-align: end;
+    }
+
+    .dropdown-toggle::before {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+    }
+
+    .dropdown-toggle::after{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px){ 
+    .nav-link .dropdown-toggle{  
+        background-color: #1a1a1a;
+    }
+
+    .ml{
+        margin-left: -32px;
+    }
+
+    .sub-menu-consultas{
+        display: none;
+    }
+
+    .sub-menu-servicios{
+        display: none;
+    }
+
+    .nav-link{
+        text-align: center;
+    }
+
+    .navbar-toggler{
+        align-items: left;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:992px){
+    .previous-icon{
+        display: none;
+    }
+}
+
+.previous-icon{
+    width: 20px;
+}

@@ -1,0 +1,165 @@
+<nav class="navbar navbar-expand-lg text-uppercase">
+    <div class="container">
+    <!--Navbar-->
+    <h3 class=" titulo logo col-12 col-md-auto text-reset text-center text-capitalize mb-3 mb-md-0 title-bold">
+        <img class="img-logo py-1" src="assets/img/logo-neuro.png" routerLink="/" alt="Logo Neuroimágenes">
+    </h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars toggler"></i>
+    </button>
+        <div class="collapse navbar-collapse subtitulo" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        
+        <!--Inicio-->
+        <li class="nav-item">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+        <!--Servicios desplegable-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              
+              <!-- CONSULTAS -->
+            <li class="nav-item dropdown">
+            <a class="nav-link text-lg-center" routerLink="/consultas-resumen" role="button"  aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/icons/previous.png" class="previous-icon" alt="Dropleft">
+              Consultas
+            </a>
+            <div class="dropdown-divider"></div>
+                 <ul class="sub-menu-consultas">
+                   <li>
+                      <a class="nav-link" routerLink="/neurologia" role="button" aria-haspopup="true" aria-expanded="false">
+                        Neurología
+                      </a>
+                   </li>
+
+                   <li>
+                    <a class="nav-link" routerLink="/neurocirugia" role="button" aria-haspopup="true" aria-expanded="false">
+                      Neurociugía
+                    </a>
+                 </li>
+
+                 <li>
+                  <a class="nav-link" routerLink="/neuropsicologia-resumen" role="button"  aria-haspopup="true" aria-expanded="false">
+                    Neuropsicología
+                  </a>
+               </li>
+
+               <li>
+                <a class="nav-link" routerLink="/fisiatria" role="button"  aria-haspopup="true" aria-expanded="false">
+                  Fisiatría
+                </a>
+             </li>
+
+             <li>
+              <a class="nav-link" routerLink="/neuropediatria" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Neuropediatría
+              </a>
+           </li>
+                 </ul>
+            </li>
+
+              <!--EXÁMENES-->
+              <li class="nav-item dropdown">
+              <a class="nav-link text-lg-center" routerLink="/examenes-resumen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/icons/previous.png" class="previous-icon" alt="Dropleft">
+                Exámenes
+            </a>
+            <ul class="sub-menu-servicios">
+              <li>
+                <a class="nav-link" routerLink="/polisomnografia" role="button" aria-haspopup="true" aria-expanded="false">
+                  Polisomnografía
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-link" routerLink="/electroencefalograma" role="button" aria-haspopup="true" aria-expanded="false">
+                  Electroencefalograma
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-link" routerLink="/videotelemetria" role="button" aria-haspopup="true" aria-expanded="false">
+                  Videotelemetría
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-link" routerLink="/examen-electromiografia-neuroconduccion" role="button" aria-haspopup="true" aria-expanded="false">
+                  Electromiografía & Neuroconducción
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-link" routerLink="/examen-potenciales-evocados" role="button" aria-haspopup="true" aria-expanded="false">
+                  Potenciales evocados
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-link" routerLink="/examen-test-lambert" role="button" aria-haspopup="true" aria-expanded="false">
+                  Test  de Lambert
+                </a>
+              </li>
+            </ul>
+            </li>
+            </div>
+          </li>
+
+        <!-- Nosotros desplegable -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Nosotros
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <a class="nav-link subtitulo text-lg-center" routerLink="/quienes-somos">¿Quiénes somos?</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="nav-link subtitulo text-lg-center" routerLink="/mision-vision">Misión y Visión</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="nav-link subtitulo text-lg-center" routerLink="/instalaciones">Instalaciones</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="nav-link subtitulo text-lg-center" routerLink="/equipo-humano">Equipo humano</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="nav-link subtitulo text-lg-center" routerLink="/ppss">PPSS</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="nav-link subtitulo text-lg-center" routerLink="/informes-resumen">Informes</a>
+          </div>
+        </li>
+   
+        <!-- Valoración desplegable -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Valoración
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <a class="nav-link subtitulo text-lg-center" routerLink="/pqrs">ENVÍA TU PQRS</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="nav-link subtitulo text-lg-center" routerLink="/encuesta-satisfaccion">Encuesta de satisfacción</a>
+          </div>
+        </li>
+        <!-- Galería -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/galeria">Galería</a>
+          </li>
+
+        <!-- Contáctenos -->
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/contactenos">Contáctenos</a>
+            </li>
+
+      </ul>
+    </div>
+    </div>
+  </nav>

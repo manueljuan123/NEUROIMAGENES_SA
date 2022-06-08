@@ -1,0 +1,21 @@
+.space{
+    margin-bottom: 10rem;
+}
+li a{
+    background-color: rgb(173, 211, 249);
+    color: #0878A0;
+    list-style: none;
+    text-decoration: none;
+    font-style: italic;
+    border: none;
+}
+
+
+
+@media screen and (min-width:995px){ 
+    .btn:hover{
+        transition: 2s;
+        color: rgb(255, 255, 255);
+        background-color: #2E338C;
+    }
+}

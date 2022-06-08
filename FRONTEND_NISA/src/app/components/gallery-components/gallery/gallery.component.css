@@ -1,0 +1,190 @@
+img{ max-width:100%;
+     }
+
+.gallery_box li{
+    list-style: none;
+}
+
+@media screen and (min-width:1361px){
+
+    .order-grid{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1em;
+    }
+
+    
+    .gallery_box li{
+        width:33.333333%;
+        max-width: 100% ;
+        float: left;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        }
+
+    .gallery_box{ padding:0;display: flow-root;}
+
+    .gallery_box li:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .gallery_box li img{
+        -webkit-transition: transform 0.5s ease;
+        -o-transition: transform 0.5s ease;
+        transition: transform 0.5s ease;
+    }
+
+    .gallery_box li:nth-child(even) {
+        height: 404px;
+    }
+    .gallery_box li:nth-child(odd) {
+        height: 638px; 
+    }
+    .gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+}
+
+@media screen and (min-width:1024px) and (max-width:1360px){
+    .order-grid{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1em;
+    }
+
+    .gallery_box li{
+        width:33.333333%;
+        float: left;
+        max-width: 100% ;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        }
+
+    .gallery_box{ padding:0;display: flow-root;}
+
+    .gallery_box li:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .gallery_box li img{
+        -webkit-transition: transform 0.5s ease;
+        -o-transition: transform 0.5s ease;
+        transition: transform 0.5s ease;
+    }
+
+    .gallery_box li:nth-child(even) {
+        height: 290px;
+    }
+    .gallery_box li:nth-child(odd) {
+        height: 480px; 
+    }
+    .gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;
+}
+    
+
+
+}
+
+@media only screen and (min-width:995px) and (max-width: 1023px){
+    .area-space{
+        position: relative;
+        top: -210px;
+    }
+
+    .area-space-turn{
+        position: relative;
+        top: -220px;
+    }
+
+    .space-area-convert{
+        position: relative;
+        top: -450px;
+    }
+    
+    .gallery_box li{
+        width:33.333333%;
+        float: left;
+        max-width: 100% ;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        }
+
+    .gallery_box{ padding:0;display: flow-root;}
+
+    .gallery_box li:nth-child(even) {
+        height: 204px;
+    }
+    .gallery_box li:nth-child(odd) {
+        height: 390px; 
+    }
+    .gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+    .gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+    .gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff; height: 100px;}
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 994px){
+    .order-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0fr, 1fr);
+    }
+
+    .second-grid{
+        display:inline-flex;
+
+    }
+    
+
+    .gallery_box li{
+        padding: 5px;
+        padding-right: 35px;
+        width:100%;
+        max-width: 100% ;
+        overflow: hidden;
+        position: relative;
+        }
+}
+
+@media only screen and (min-device-width: 426px) and (max-device-width: 669px){
+    .gallery_box li{
+        list-style: none;
+        float: left;
+        padding-right: 40px;
+    }
+
+    .area-space{
+        position: relative;
+        top: 0;
+    }
+
+    .area-space-turn{
+        position: relative;
+        bottom: 30px;
+    }
+
+
+
+}
+
+@media screen and (max-width:425px){
+    .gallery_box li{
+        list-style: none;
+        padding-right: 35px;
+    }
+
+    .area-space{
+        position: relative;
+        top: -35px;
+    }
+
+    .area-space-turn{
+        position: relative;
+        bottom: 35px;
+    }
+
+}

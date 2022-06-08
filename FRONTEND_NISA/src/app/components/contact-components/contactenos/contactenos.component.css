@@ -1,0 +1,63 @@
+.btn-info{
+    background-color: #2E338C;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-consulta{
+    background-color: #2E338C;
+    color: #ffffff;
+    border: none;
+}
+
+@media screen and (min-width:1024px){
+    .btn-info:hover{
+        color: #2E338C;
+        background-color: #B7D93D;
+        transition: 2s;
+        border: none;
+    }
+}
+
+.contact{
+    padding-left: 13rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+}
+
+.back-title{
+    background-color: #B7D93D;
+}
+
+button{
+    outline: none;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 375px){
+    .agenda{
+        text-align: left;
+    }
+
+    .margintop-contact{
+        margin-top: 70px;
+    }
+
+    .button-position-left{
+        text-align: left;
+    }
+
+    .button-position{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 320px){
+    .info{
+        text-align: center;
+    }
+}

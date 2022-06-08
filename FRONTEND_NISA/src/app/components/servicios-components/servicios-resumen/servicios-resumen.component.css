@@ -1,0 +1,40 @@
+.card-img-filter{
+    filter: brightness(0.9);
+}
+
+.text-black{
+    color: black;
+}
+
+@media screen and (min-width: 1024px){
+    .card{
+        transition-duration: 0.6s;
+        clip-path: polygon(
+            50% 0,
+            100% 0,
+            100% 50%,
+            100% 100%,
+            50% 100%,
+            0 100%,
+            0 50%,
+            0 0%);
+    }
+    
+    .card-effect:hover .card {
+        clip-path: polygon(
+            10% 0,
+            10% 0,
+            100% 10%,
+            100% 50%,
+            50% 100%,
+            10% 100%,
+            0 50%,
+            0 10%);
+    }
+}
+
+@media only screen and (min-width:1024px) and  (max-width:1300px){
+    article{
+        font-size:small;
+    }
+}

@@ -1,0 +1,21 @@
+.btn-info{
+    background-color: #2E338C;
+}
+
+.btn-info:hover{
+    background-color: #030A8C;
+    transition: all .4s ease-in-out;
+    border-color: #B7D93D;
+    color: #B7D93D;
+}
+
+section{
+    background-color: #B7D93D;
+}
+
+
+@media screen and (max-width: 375px){
+    .btn-info:hover .btn-info{
+        display: none;
+    }
+}

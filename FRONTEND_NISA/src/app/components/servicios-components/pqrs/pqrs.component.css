@@ -1,0 +1,34 @@
+.cuadro{
+    background-color: #2E338C;
+    border-radius: 1rem;
+}
+
+.back-title{
+    background-color: #0878A0;
+    color: white;
+}
+
+.btn-pqrs{
+    background-color: #2E338C;
+    border-color: #2E338C;
+    color: white;
+}
+
+.btn-info{
+    border: none;
+    background-color: #0878A0;
+
+}
+
+@media screen and (min-width:1024px){
+    .btn-info:hover{
+        color: #ffffff;
+        background-color: #2E338C;
+        transition: 2s;
+        border: none;
+    }
+}
+
+button{
+    outline: none;
+}

@@ -1,0 +1,39 @@
+.cuadro{
+    background-color: #0878A0;
+    border-radius: 1rem;
+}
+
+.btn-info{
+    border: none;
+    background-color: #0878A0;
+    color: #ffffff;
+}
+
+@media screen and (min-width:1024px){
+    .btn-info:hover{
+        color: #ffffff;
+        background-color: #2E338C;
+        transition: 2s;
+        border: none;
+    }
+}
+
+.back-title{
+    background-color: #0878A0;
+}
+
+button{
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px){
+    .font-size{
+        font-size:10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px){
+    .font-size{
+        font-size: 14.8px;
+    }
+}

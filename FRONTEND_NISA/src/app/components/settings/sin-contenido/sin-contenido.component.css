@@ -1,0 +1,20 @@
+.img{
+    width: 100%;
+}
+
+.btn{
+    background-color: #B7D93D;
+    color: #2E338C;
+}
+ @media screen and (min-width: 1024px){
+    .btn:hover{
+        color: #B7D93D;
+        background-color: #2E338C;
+        transition: 2s;
+    }
+
+    h1:hover{
+        color: #2E338C;
+        transition: 2s;
+    }
+}

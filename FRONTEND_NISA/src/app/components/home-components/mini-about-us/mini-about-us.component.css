@@ -1,0 +1,19 @@
+.personal-foto{
+    border-radius: 10px;
+}
+
+
+.non-style{
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 30rem;
+}
+
+@media screen and (min-width: 425px){
+    .medium-hover-green:hover::after{
+        width: 100%;
+}
+}
+
