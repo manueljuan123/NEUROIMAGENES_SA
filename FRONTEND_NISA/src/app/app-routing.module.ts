@@ -66,6 +66,7 @@ import { EstadosDieciseisContainerComponent } from './containers/nosotros-contai
 import { DictamenRevisorFiscalDieciseisContainerComponent } from './containers/nosotros-container/informes-container/2016/dictamen-revisor-fiscal-dieciseis-container/dictamen-revisor-fiscal-dieciseis-container.component';
 import { EstadosQuinceContainerComponent } from './containers/nosotros-container/informes-container/2015/estados-quince-container/estados-quince-container.component';
 import { InformesResumenQuinceContainerComponent } from './containers/nosotros-container/informes-container/2015/informes-resumen-quince-container/informes-resumen-quince-container.component';
+import { TratamientoDatosContainerComponent } from './containers/nosotros-container/tratamiento-datos-container/tratamiento-datos-container.component';
 
 const routes: Routes = [
   /* RUTAS PRINCIPALES */
@@ -172,6 +173,9 @@ const routes: Routes = [
           /* INFORMES 2015 */
           { path: 'informes-resumen-2015', component: InformesResumenQuinceContainerComponent},
           { path: 'estados-financieros-2015', component: EstadosQuinceContainerComponent },
+      
+      /* TRATAMIENTO DE DATOS */
+      { path:"tratamiento-datos", component: TratamientoDatosContainerComponent}
 ];
 
 @NgModule({

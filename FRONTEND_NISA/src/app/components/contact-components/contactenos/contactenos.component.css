@@ -35,6 +35,17 @@ button{
     outline: none;
 }
 
+/* WHATSAPP ICON */
+.whatsapp-social-bar{
+    font-size: 1.5rem;
+    z-index: 100;
+    
+}
+
+.whatsapp-icon {
+    height: 1rem;
+    text-decoration: none;
+}
 
 /*MEDIA QUERIES*/
 

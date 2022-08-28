@@ -152,6 +152,8 @@ import { InformesResumenQuinceContainerComponent } from './containers/nosotros-c
 import { EstadosQuinceContainerComponent } from './containers/nosotros-container/informes-container/2015/estados-quince-container/estados-quince-container.component';
 import { EstadosQuinceComponent } from './components/nosotros-components/informes/2015/estados-quince/estados-quince.component';
 import { InformesResumenQuinceComponent } from './components/nosotros-components/informes/2015/informes-resumen-quince/informes-resumen-quince.component';
+import { TratamientoDatosComponent } from './components/nosotros-components/tratamiento-datos/tratamiento-datos.component';
+import { TratamientoDatosContainerComponent } from './containers/nosotros-container/tratamiento-datos-container/tratamiento-datos-container.component';
 
 @NgModule({
   declarations: [
@@ -307,6 +309,8 @@ import { InformesResumenQuinceComponent } from './components/nosotros-components
         EstadosQuinceContainerComponent,
         EstadosQuinceComponent,
         InformesResumenQuinceComponent,
+        TratamientoDatosComponent,
+        TratamientoDatosContainerComponent
   ],
   imports: [
     BrowserModule,
